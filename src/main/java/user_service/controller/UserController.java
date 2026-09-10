@@ -25,7 +25,7 @@ public class UserController {
     public User createUser(@RequestBody User user) {
         return service.createUser(user);
     }
-
+    // Get user by ID
     @GetMapping("/{id}")
     public User getUserById(@PathVariable Long id) {
         return service.getUserById(id);
