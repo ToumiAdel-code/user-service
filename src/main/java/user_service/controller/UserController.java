@@ -20,7 +20,7 @@ public class UserController {
     public List<User> getUsers() {
         return service.getAllUsers();
     }
-
+    // Create a new user
     @PostMapping
     public User createUser(@RequestBody User user) {
         return service.createUser(user);
